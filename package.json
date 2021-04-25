@@ -1,6 +1,6 @@
 {
   "name": "@ioa/oass",
-  "version": "10.0.1",
+  "version": "11.0.0",
   "type": "module",
   "description": "封装oass生成openapi文档的ioa组件",
   "scripts": {
