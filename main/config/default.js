@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
   "@ioa/ormv": {
     "host": "localhost",
     "port": 5532,

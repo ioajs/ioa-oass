@@ -1,13 +1,13 @@
-'use strict';
+import ioa from 'ioa';
 
-const app = require('@app');
+const { app } = ioa;
 
 app.use("./lib");
 app.use("@ioa/config");
 app.use("@ioa/ormv");
 
 app.loader({
-  test: {
+  "test": {
     level: 100,
     action() {
       // console.log(app.apis.home);

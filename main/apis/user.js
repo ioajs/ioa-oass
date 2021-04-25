@@ -1,7 +1,7 @@
-'use strict';
+import ioa from 'ioa';
+import OpenAPI from 'oass';
 
-const OpenAPI = require('oass');
-const { model, modelToSchemas } = require('@app');
+const { model, modelToSchemas } = ioa.app;
 
 const user = modelToSchemas(model.user);
 
@@ -181,4 +181,4 @@ openapi.path("/user/avatar", {
   },
 })
 
-module.exports = openapi;
+export default openapi;

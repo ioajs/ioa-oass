@@ -1,6 +1,4 @@
-'use strict';
-
-const OpenAPI = require('oass');
+import OpenAPI from 'oass';
 
 const openapi = new OpenAPI({
   "openapi": "3.0.0",
@@ -123,4 +121,4 @@ openapi.path("/alioss/admin/category", {
   }
 })
 
-module.exports = openapi;
+export default openapi;

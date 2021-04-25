@@ -1,8 +1,8 @@
-'use strict';
+import ioa from 'ioa';
 
-const { ormv } = require('@app');
+const { ormv } = ioa.app;
 
-module.exports = ormv.model('user', {
+export default ormv.model('user', {
   'id': {
      type: 'integer',
      primaryKey: true
