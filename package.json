@@ -1,21 +1,18 @@
 {
   "name": "@ioa/oass",
-  "version": "11.0.0",
+  "version": "11.1.0",
   "type": "module",
-  "description": "封装oass生成openapi文档的ioa组件",
-  "scripts": {
-    "publish": "npm publish --access public",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "ioa的openapi组件,封装oass生成openapi文档",
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "files": [
     "lib"
   ],
   "devDependencies": {
-    "@ioa/config": "^11.0.1",
+    "@ioa/config": "^11.0.3",
     "axios": "^0.18.0",
-    "ioa": "^11.0.4-rc"
+    "ioa": "^11.0.6"
   },
   "dependencies": {
     "@ioa/ormv": "^11.0.1"

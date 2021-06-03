@@ -1,6 +1,6 @@
 import OpenAPI from 'oass';
 
-const openapi = new OpenAPI({
+const api = new OpenAPI({
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
@@ -42,7 +42,7 @@ const cid = {
   "required": true,
 }
 
-openapi.get("/city/home", {
+api.get("/city/home", {
   "summary": `首页分类菜单、折扣日历聚合`,
   "tags": ["user"],
   "parameters": [location],
@@ -70,7 +70,7 @@ openapi.get("/city/home", {
   }
 })
 
-openapi.get("/city/home/recommend", {
+api.get("/city/home/recommend", {
   "summary": `首页推荐初始化数据，包含分类选项卡、默认推荐列表`,
   "tags": ["user"],
   "parameters": [location],
@@ -90,7 +90,7 @@ openapi.get("/city/home/recommend", {
   }
 })
 
-openapi.get("/city/home/recommend/all", {
+api.get("/city/home/recommend/all", {
   "summary": `首页综合推荐列表`,
   "tags": ["user"],
   "parameters": [location, page, limit],
@@ -110,7 +110,7 @@ openapi.get("/city/home/recommend/all", {
   }
 })
 
-openapi.get("/city/home/recommend/{cid}", {
+api.get("/city/home/recommend/{cid}", {
   "summary": `首页分类推荐列表`,
   "tags": ["user"],
   "parameters": [location, cid, page, limit],
@@ -130,4 +130,4 @@ openapi.get("/city/home/recommend/{cid}", {
   }
 })
 
-export default openapi;
+export default api;

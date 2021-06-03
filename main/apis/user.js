@@ -1,9 +1,9 @@
 import ioa from 'ioa';
 import OpenAPI from 'oass';
 
-const { model, modelToSchemas } = ioa.app;
+const { model, modelToSchema } = ioa.app;
 
-const user = modelToSchemas(model.user);
+const user = modelToSchema(model.user);
 
 const { schema, list, details } = user;
 
@@ -150,7 +150,7 @@ openapi.path("/user/nickName", {
       }
     }
   },
-})
+});
 
 openapi.path("/user/avatar", {
   "put": {
@@ -179,6 +179,6 @@ openapi.path("/user/avatar", {
       }
     }
   },
-})
+});
 
 export default openapi;
