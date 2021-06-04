@@ -1,6 +1,6 @@
 {
   "name": "@ioa/oass",
-  "version": "11.1.0",
+  "version": "11.1.1",
   "type": "module",
   "description": "ioa的openapi组件,封装oass生成openapi文档",
   "scripts": {},
@@ -10,11 +10,11 @@
     "lib"
   ],
   "devDependencies": {
-    "@ioa/config": "^11.0.3",
+    "@ioa/config": "^11.0.4",
     "axios": "^0.18.0",
-    "ioa": "^11.0.6"
+    "ioa": "^11.0.10"
   },
   "dependencies": {
-    "@ioa/ormv": "^11.0.1"
+    "@ioa/ormv": "^11.0.2"
   }
 }

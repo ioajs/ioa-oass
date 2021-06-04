@@ -1,16 +1,15 @@
-import ioa from 'ioa';
-
-const { app } = ioa;
-
-app.use("@ioa/config");
-app.use("@ioa/ormv");
-app.use("./lib");
-
-app.loader({
-  "test": {
-    level: 100,
-    action() {
-      // console.log(app.apis.home);
+export default {
+  components: [
+    "@ioa/config",
+    "@ioa/ormv",
+    "./lib"
+  ],
+  import: {
+    "test": {
+      level: 100,
+      action() {
+        // console.log(app.apis.home);
+      }
     }
   }
-});
+}
