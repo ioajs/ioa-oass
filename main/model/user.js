@@ -1,6 +1,6 @@
 import ioa from 'ioa';
 
-const { ormv } = ioa.app;
+const { ormv } = ioa.app();
 
 export default ormv.model('user', {
   'id': {

@@ -1,7 +1,7 @@
 import ioa from 'ioa';
 import OpenAPI from 'oass';
 
-const { model, modelToSchema } = ioa.app;
+const { model, modelToSchema } = ioa.app();
 
 const user = modelToSchema(model.user);
 
