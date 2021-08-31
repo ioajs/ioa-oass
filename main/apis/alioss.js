@@ -6,7 +6,7 @@ const openapi = new OpenAPI({
     "version": "1.0.0",
     "title": "阿里云OSS",
     "summary": "",
-  },
+  }
 });
 
 const parameters = [
